@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-interface CourseCardProps {
+export interface CourseCardProps {
   imageUrl: string;
   name: string;
   description: string;
@@ -12,14 +12,7 @@ const CourseCard = ({ imageUrl, name, description, price, discount }: CourseCard
   return (
     <div className="bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
       <div className="relative h-48 w-full">
-        {imageUrl && (
-          <Image
-            src={imageUrl}
-            alt={name || "Course Image"}
-            fill
-            style={{ objectFit: "cover" }}
-          />
-        )}
+        <Image src={imageUrl} alt={name} fill style={{ objectFit: 'cover' }} />
       </div>
       <div className="p-4">
         <h2 className="text-xl font-bold mb-2">{name}</h2>
