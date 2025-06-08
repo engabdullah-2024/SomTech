@@ -1,4 +1,4 @@
-import CourseCard from './courses/page';
+import CourseCard from './courses/CourseCard';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import TestimonialsPage from './testimonials/page';

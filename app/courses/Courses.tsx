@@ -1,4 +1,4 @@
-import CourseCard from '../courses/page'; // Adjust the path
+import CourseCard from './CourseCard'; // Adjust the path
 
 const courses = [
   {
